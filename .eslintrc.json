@@ -1,0 +1,30 @@
+{
+  "env": { "node": true },
+  "extends": ["eslint:all", "prettier"],
+  "overrides": [
+    {
+      "extends": [
+        "eslint:all",
+        "plugin:@typescript-eslint/recommended",
+        "prettier"
+      ],
+      "files": ["**/*.js", "**/*.ts"],
+      "parser": "@typescript-eslint/parser",
+      "plugins": ["@typescript-eslint"],
+      "rules": {
+        "@typescript-eslint/dot-notation": "off",
+        "@typescript-eslint/no-base-to-string": "off",
+        "@typescript-eslint/no-explicit-any": [
+          "error",
+          { "fixToUnknown": true }
+        ]
+      }
+    }
+  ],
+  "root": true,
+  "rules": {
+    "one-var": ["error", "never"],
+    "func-style": "off",
+    "no-console": "off"
+  }
+}
