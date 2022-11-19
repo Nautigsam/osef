@@ -1,0 +1,29 @@
+{
+  "name": "osef",
+  "type": "module",
+  "version": "0.3.0",
+  "description": "",
+  "bin": "./bin/osef.js",
+  "scripts": {
+    "start": "ts-node lib/index.ts",
+    "lint": "eslint --fix .",
+    "format": "prettier --write ."
+  },
+  "author": "Aurélien Bertron",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.11.9"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "typescript": "<4.9.0"
+  },
+  "overrides": {
+    "typescript": "<4.9.0"
+  }
+}
