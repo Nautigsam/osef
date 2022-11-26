@@ -14,6 +14,7 @@
     "@typescript-eslint/no-explicit-any": ["error", { "fixToUnknown": true }],
     "one-var": ["error", "never"],
     "func-style": "off",
-    "no-console": "off"
+    "no-console": "off",
+    "no-inline-comments": "off"
   }
 }
