@@ -23,6 +23,7 @@ import("../lib/index.js")
       console.log("Success!\n");
     } else {
       console.error("Error: cleaner failed\n");
+      exit(1);
     }
   })
   .catch(
